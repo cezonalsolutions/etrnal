@@ -792,10 +792,26 @@
 
   /* WELCOME */
 
+ 
+@media screen and (max-width: 600px) {
+
+  /* Hide first stack until user scrolls */
   body > .welcome-section {
     background: #ffffff;
+    margin-top: 0 !important;
     padding-top: 76px;
   }
+
+  /* Other sections keep their overlap */
+  body > .waiting-section,
+  body > .methai-promise-section,
+  body > .methai-download-section,
+  body > .methai-footer {
+    margin-top: -26px;
+  }
+
+}
+
 
   /* WAITING */
 
